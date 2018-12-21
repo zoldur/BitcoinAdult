@@ -15,7 +15,7 @@ bash bitcoinadult_install.sh
 After the Masternode is up and running, you need to configure the desktop wallet accordingly. Here are the steps:
 1. Open the BitcoinAdult Desktop Wallet.
 2. Go to RECEIVE and create a New Address: **MN1**
-3. Send **5000** BTAD to **MN1**. You need to send all 5000 coins in one single transaction.
+3. Send **25000** BTAD to **MN1**. You need to send all 25000 coins in one single transaction.
 4. Wait for 15 confirmations.
 5. Go to **Help -> "Debug Window - Console"**
 6. Type the following command: **masternode outputs**
