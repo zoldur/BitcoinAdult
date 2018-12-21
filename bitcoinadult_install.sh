@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.BitcoinAdult'
 COIN_DAEMON='BitcoinAdultd'
 COIN_CLI='BitcoinAdult-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/BitcoinAdult/Bitcoin-Adult-Source-Code-v.1.1.0.0---New-Code/releases/download/v.1.1.0.0/BitcoinAdult.v.1.1.0.0.Linux.zip'
+COIN_TGZ='https://github.com/zoldur/BitcoinAdult/releases/download/v1.1.0.0/BitcoinAdult.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='BitcoinAdult'
 COIN_PORT=8120
@@ -29,7 +29,7 @@ function download_node() {
   unzip -x $COIN_ZIP >/dev/null 2>&1
   cd BitcoinAdult_v1.1.0.0_Linux_16.04x64/BitcoinAdult_v1.1.0.0_Linux_16.04x64 >/dev/null 2>&1
   chmod +x * >/dev/null 2>&1
-  mv $COIN_DAEMON $COIN_CLI $COIN_DAEMON >/dev/null 2>&1
+  mv $COIN_DAEMON $COIN_CLI $COIN_PATH >/dev/null 2>&1
   cd $(OLD_DIR) >/dev/null 2>&1
   rm -rf $TMP_FOLDER >/dev/null 2>&1
   clear
